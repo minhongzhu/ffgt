@@ -1,2 +1,0 @@
-# ffgt
-FFGT
