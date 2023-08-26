@@ -1,0 +1,46 @@
+{
+    "gpu": {
+        "use": true,
+        "id": 0
+    },
+    
+    "model": "vanilla_ffgt",
+    "dataset": "PATTERN_pq_012_001_005",
+    
+    "out_dir": "out/SBM-PATTERN/pq_012_001_005/vanilla/",
+    
+    "params": {
+        "seed": 42,
+        "num_workers": 8,
+        "epochs": 100,
+        "batch_size": 32,
+        "peak_lr": 2e-4,
+        "end_lr": 1e-9,
+        "weight_decay": 0.001,
+        "warmup_epochs": 5,
+        "tot_epochs": 100,
+        "max_dist": 2,
+        "max_node": 512,
+        "max_freq": 8
+    },
+    
+    "net_params": {
+        "n_task": 1,
+        "task_type": "inductive-node",
+        "n_layers": 6,
+        "hidden_dim": 80,
+        "n_heads": 4,
+        "k_heads": 2,
+        "attn_dim": 20,
+        "pe_dim": 80,
+        "ffn_dim": 160,
+        "dropout_rate": 0.1,
+        "attention_dropout_rate": 0.1,
+        "use_independent_token": false,
+        "num_last_mlp": 1,
+        "num_node_type": -3,
+        "num_edge_type": 1,
+        "perturb": 0.0,
+        "add_edge": true
+    }
+}

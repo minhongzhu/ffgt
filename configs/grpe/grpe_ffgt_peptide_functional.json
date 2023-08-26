@@ -1,0 +1,43 @@
+{
+    "gpu": {
+        "use": true,
+        "id": 0
+    },
+    
+    "model": "grpe_ffgt",
+    "dataset": "pep-func",
+    
+    "out_dir": "out/peptide-functional/grpe/",
+    
+    "params": {
+        "seed": 42,
+        "num_workers": 8,
+        "epochs": 250,
+        "batch_size": 64,
+        "peak_lr": 3e-4,
+        "end_lr": 1e-8,
+        "weight_decay": 0.01,
+        "warmup_epochs": 10,
+        "tot_epochs": 250,
+        "max_dist": 5,
+        "max_node": 512
+    },
+    
+    "net_params": {
+        "n_task": 10,
+        "task_type": "graph",
+        "n_layers": 4,
+        "hidden_dim": 120,
+        "n_heads": 4,
+        "k_heads": 2,
+        "attn_dim": 30,
+        "ffn_dim": 120,
+        "dropout_rate": 0.1,
+        "attention_dropout_rate": 0.3,
+        "use_independent_token": false,
+        "num_last_mlp": 1,
+        "max_hop": 20,
+        "num_node_type": 4615,
+        "num_edge_type": 40
+    }
+}
