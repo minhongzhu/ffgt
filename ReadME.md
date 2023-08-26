@@ -70,7 +70,7 @@ Four Synthetic Datasets based on SBM-PATTERN is used to test whether optimal foc
 
 ### Running SBM-PATTERN datasets
 
-The four dataset can be downloaded [here](https://github.com/minhongzhu/sbm-pattern-new). To run Vanilla-FFGT on these datasets, one should follow the guidlines as follows:
+The four datasets can be downloaded [here](https://github.com/minhongzhu/sbm-pattern-new). To run Vanilla-FFGT on these datasets, one should follow the guidlines as follows:
 
 ```bash
 
