@@ -4,6 +4,8 @@ FFGT is a purely attention based framework which combines the conventional full-
 
 Here is the guidance of running ffgt. All experiments are run on a laptop with AMD Ryzen 9 5950X 16-Core processor, 64.0 GB RAM and one Nvidia RTX3090ti GPU.
 
+**Note**: There are problems with downloading `SBM-PATTERN-NEW datasets` in versions before Aug.27, 2023. Please use the latest version of ffgt to run experiments on these datasets.
+
 ### Python environment setup with Conda
 
 ```bash
@@ -68,7 +70,7 @@ Four Synthetic Datasets based on SBM-PATTERN is used to test whether optimal foc
 | $p=0.11$ | 12000 | 130 | 4.85 | 7.00  |
 
 
-### Running SBM-PATTERN datasets
+### Running SBM-PATTERN-NEW datasets
 
 The four datasets can be downloaded [here](https://github.com/minhongzhu/sbm-pattern-new). To run Vanilla-FFGT on these datasets, one should follow the guidlines as follows:
 
@@ -82,4 +84,4 @@ The four datasets can be downloaded [here](https://github.com/minhongzhu/sbm-pat
 
 ```
 
-Note that all SBM-PATTERN datasets should be put under `./dataset/SBM-PATTERN/` in FFGT Directory.
+Note that raw files (.zip) of SBM-PATTERN-NEW datasets should be put under `./dataset/SBM-PATTERN/` in FFGT Directory.
